@@ -42,18 +42,18 @@ const Main = () => {
               確定送出
             </Button>
           </div>
-        </div>) : (
+        </div>) : null}
         <a href="https://unsplash.com/photos/5bYxXawHOQg">
           <div
             className={styles.image}
             style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)`
+              backgroundImage: `url(https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)`,
+              transition: 'opacity 1s',
+              opacity: displayUrl ? 1 : 0,
+              height: displayUrl ? '500px' : 0,
             }}
           />
         </a>
-        )
-      }
-      
     </div>
   );
 }
